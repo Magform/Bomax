@@ -14,12 +14,12 @@ Lightrom uses a number of open source library to work properly:
 
 ## Installation and configuration
 _Since I am very busy in this period I dedicate little time to this part, I'll write it in a better way when I have more time, meanwhile if you have problems you can still contact me on telegram._
-To install bolight you need to:
+To install bomax you need to:
 - download and install all the libraries used (you can find them in the tech paragraph)
-- make all the required connections (the schema can be found in the Schematic directory)
-- open the .ino file, enter your data under the line "// Variable you need to modify" and upload it to your NodeMCU
+- make all the required connections (the schematic of the connections can be found in the Schematic directory)
+- open the .ino file in the Bomax directory, enter your data under the line "// Variable you need to modify" and upload it to your NodeMCU
 
-Now in the serial monitor you can see "Button pressed" when button is pressed and if the webhook is correctly setted you can see your light turn on.
+Now in the serial monitor you can see "Button pressed" when button is pressed and if the webhook is correctly setted you can see your alexa respond to the command.
 To set the webhook I used IFTTT and [this] site.
 
 If you want also to have the 3D printed case you can find all the need files in the 3D file directory.
@@ -29,6 +29,8 @@ If you want also to have the 3D printed case you can find all the need files in 
 There could be problems as the 3D printed button does not fit perfectly horizontal as there is a large slack (1mm per side) between the part of the button that slides and the part that stays in place.
 As, with my ender 3, if I decreased this value, the button was no longer able to scroll.
 In any case, the file is provided in STL, for direct printing and in .f3d to eventually modify it with Autodesk Fusion 360 in case you need a greater or lesser slack (if you contact me I can do it for you if the commitments allow me )
+##### Delay between action
+The site that I went to use to integrate alexa with IFTTT needs a delay between an action, which I assume is removable with the premium, so in case you need many actions close to each other you need to go and use another integration method
 
 ## License
 
